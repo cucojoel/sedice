@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: sedice
+        psr4_prefix: sedice
+        src_path: app

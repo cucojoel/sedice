@@ -1,0 +1,85 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+section {
+  height: 100vh;
+}
+
+section:nth-child(odd){
+  background: transparent !important;
+  color: black;
+}
+
+section:nth-child(even){
+  background: black;
+  color: gray;
+}
+
+.navbar{
+  margin: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0,0,0,.5);
+  border: none;
+  border-bottom: solid #FFF 1px;
+  color: #FFF;
+}
+.navbar a{
+  color: #fff !important;
+}
+
+.myModal.inactive{
+  display: none;
+}
+
+.myModal.active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0,0,0,.7);
+  overflow: hidden;
+  z-index: 101;
+}
+
+.panel-sedice{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+    top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.close-myModal{
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.myModal form {
+    padding: 15px;
+}
+
+.myModal .panel {
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.perfil{
+  text-align: center;
+}
+
+#nosotros{
+  margin-top: -20px;
+}
