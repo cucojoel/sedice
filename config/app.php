@@ -139,11 +139,11 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'sedice\Providers\AppServiceProvider',
-		'sedice\Providers\BusServiceProvider',
-		'sedice\Providers\ConfigServiceProvider',
-		'sedice\Providers\EventServiceProvider',
-		'sedice\Providers\RouteServiceProvider',
+		'App\Providers\AppServiceProvider',
+		'App\Providers\BusServiceProvider',
+		'App\Providers\ConfigServiceProvider',
+		'App\Providers\EventServiceProvider',
+		'App\Providers\RouteServiceProvider',
 		/* 
 		* Custom providers
 		*/
@@ -151,6 +151,7 @@ return [
 		'Illuminate\Html\HtmlServiceProvider',
 		'Laracasts\Flash\FlashServiceProvider',
 		'Mitul\Generator\GeneratorServiceProvider'
+		'tomcorbett/UstreamApi/DataApi'
 
 	],
 

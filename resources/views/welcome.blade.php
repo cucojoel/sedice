@@ -6,7 +6,7 @@
 		<section id="home" class="blur" data-parallax="scroll" data-image-src="/images/sm.jpg">
 		</section>
 		<section id="nosotros">
-			<h1>nosotros</h1>
+			<h1>Nosotros</h1>
 			<div class="col-md-8 col-md-offset-2">
 				
 			

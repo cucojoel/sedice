@@ -16,22 +16,29 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body>
-	<nav class="navbar navbar-default">
+<body data-spy="scroll" data-target="#chismoso">
+	<nav class="navbar navbar-default" data-spy="affi" data-offset-top="20">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#chismoso">
 					<span class="sr-only">Toggle Navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/">SEDICE</a>
+				<!--a class="navbar-brand" href="/">SEDICE</a-->
+				<a href="#" class="navbar-left"><img class="logo" src="/images/image.jpeg"></a>
+
+
 			</div>
 
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse" id="chismoso">
 				<ul class="nav navbar-nav">
-					<li><a href="{{ url('/') }}">@lang('auth.home')</a></li>
+					<li><a href="{{ url('#home') }}">@lang('auth.home')</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav">
+					<li><a href="#nosotros">Nosotros</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -47,6 +54,8 @@
 						</li>
 					@endif
 				</ul>
+
+
 			</div>
 		</div>
 	</nav>

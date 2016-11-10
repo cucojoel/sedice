@@ -2,6 +2,11 @@ html,
 body {
   height: 100%;
   margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+body{
+    position: relative;
 }
 section {
   height: 100vh;
@@ -15,21 +20,6 @@ section:nth-child(odd){
 section:nth-child(even){
   background: black;
   color: gray;
-}
-
-.navbar{
-  margin: 0;
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
-  background: rgba(0,0,0,.5);
-  border: none;
-  border-bottom: solid #FFF 1px;
-  color: #FFF;
-}
-.navbar a{
-  color: #fff !important;
 }
 
 .myModal.inactive{
@@ -82,4 +72,102 @@ section:nth-child(even){
 
 #nosotros{
   margin-top: -20px;
+  padding: 50px;
 }
+
+
+
+
+.navbar{
+  margin: 0;
+  z-index: 100;
+  width: 100%;
+  background: #cdd4d0;
+  border: none;
+  color: #FFF;
+}
+
+
+.navbar a{
+  color: #fff !important;
+}
+
+.affix-top{
+  background: rgba(0,0,0,.1);
+}
+
+.affix{
+  background: gray;
+}
+
+.asideLeft{
+height: 100%;
+width: 20%;
+display: block;
+float: left;
+background: #ad7141;
+}
+
+.asideright{
+height: 100%;
+width: 20%;
+display: block;
+float: right;
+background: #a69179;
+}
+
+.sectionContent{
+  display: block;
+  float: left;
+  width: 60%;
+  position: relative;
+}
+
+.navbar-left .logo{
+  width: 65px;
+}
+
+
+.sectionContent{
+  background: #1e284b !important;
+}
+
+#example_video_1{
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+/** video JS
+*********************************************/
+
+.video-js {
+    display: block;
+    color: #fff;
+    position: relative;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.video-js .vjs-tech {
+    height: auto !important;
+    width: 100%;
+    position: relative !important;
+}
+
+.video-js .vjs-big-play-button {
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.video-js .vjs-control-bar{
+  position: relative !important;
+}
+
+
+
