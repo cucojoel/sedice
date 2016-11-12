@@ -151,7 +151,6 @@ return [
 		'Illuminate\Html\HtmlServiceProvider',
 		'Laracasts\Flash\FlashServiceProvider',
 		'Mitul\Generator\GeneratorServiceProvider'
-		'tomcorbett/UstreamApi/DataApi'
 
 	],
 
