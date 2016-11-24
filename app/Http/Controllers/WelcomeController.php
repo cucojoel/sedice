@@ -30,7 +30,13 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+
+		        $ytcode = "";
+
+    if (isset($_GET["code"])) {
+    $ytcode = $_GET["code"];
+    }
+		return view('welcome')->with("ytcode", $ytcode);
 	}
 
 }

@@ -157,6 +157,7 @@ background: #a69179;
     height: auto !important;
     width: 100%;
     position: relative !important;
+    max-height: 100%;
 }
 
 .video-js .vjs-big-play-button {
@@ -171,3 +172,34 @@ background: #a69179;
 
 
 
+.navbar-nav>li>.dropdown-menu {
+    background: #e7e7e7;
+    border-top: none;
+}
+
+.yuoT{
+  width: 100%;
+  height: 80%;
+}
+#player{
+    width: 100%;
+  height: 80%;
+}
+
+div#main {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+footer.w3-content.w3-padding-64.w3-text-grey.w3-xlarge {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+}
+
+.w3-padding-64 {
+     padding-top: 0 !important; 
+     padding-bottom: 0 !important; 
+}

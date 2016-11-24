@@ -64,7 +64,8 @@ Route::get('/home', function () {
     }, $status, $headers);
 });
 
-    $video = "video/IMG_3665.MOV";
+    //$video = "video/IMG_3665.MOV";
+    $video = "";
     $mime = "video/mp4";
     $title = "Os Simpsons";
     return view('home')->with(compact('video', 'mime', 'title'));
@@ -82,10 +83,12 @@ Route::get('/video/{filename}', function ($filename) {
 });
 
 
+Route::get('/live', function () {
+        $ytcode = "";
 
-Route::resource('demos', 'demoController');
+    if (isset($_GET["code"])) {
+    $ytcode = $_GET["code"];
+    }
 
-Route::get('demos/{id}/delete', [
-    'as' => 'demos.delete',
-    'uses' => 'demoController@destroy',
-]);
+    return view("live")->with("ytcode", $ytcode);
+});
